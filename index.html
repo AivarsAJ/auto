@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOSCH 4MANN Service - Kvalitatīvs serviss jūsu automašīnai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="4MANN Service Logo" class="header-logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">SĀKUMS</a></li>
+                    <li><a href="#services" class="nav-link">PAKALPOJUMI</a></li>
+                    <li><a href="#bosch" class="nav-link">BOSCH CAR SERVICE</a></li>
+                    <li><a href="#book" class="nav-link">PIETEIKT AUTO SERVISĀ</a></li>
+                    <li><a href="#about" class="nav-link">PAR MUMS</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="#contact" class="btn-contact">KONTAKTI</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Meklēt...">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-badge">BOSCH CAR SERVICE</div>
+            <h1 class="hero-title">KVALITATĪVS SERVISS<br>JŪSU AUTOMAŠĪNAI</h1>
+            <p class="hero-description">Autoserviss SIA „Auto Fans” tika dibināts 1999. gadā, par šo laiku esam izveidojuši zinošāko un pieredzējušāko auto meistaru komandu. Patlaban, pateicoties mūsu speciālistu kvalifikācijai un tehniskajam nodrošinājumam, mēs spējam atrisināt jebkuras sarežģītības uzdevumus.</p>
+            <a href="#book" class="btn-hero">PIESAKI AUTO SERVISĀ</a>
+        </div>
+        <!-- Feature Bar -->
+        <div class="feature-bar">
+            <div class="feature-items">
+                <div class="feature-item">
+                    <div class="feature-icon quality">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <span class="feature-text">KVALITĀTE</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon team">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <span class="feature-text">PROFESIONĀLA KOMANDA</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon warranty">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="feature-text">GARANTIJA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">MŪSU SNIEGTIE PAKALPOJUMI</h4>
+                <h2 class="section-title">KVALITATĪVS SERVISS VISU MARKU UN MODEĻU AUTOMAŠĪNĀM</h2>
+                <p class="section-description">BOSCH CAR SERVICE Jūs atradīsiet tieši to, ko meklējat — eksperta padomu no mūsu servisa speciālistiem, kas nepārtraukti papildina zināšanas, visaugstākās kvalitātes remontu un Bosch kvalitātes rezerves daļas par pieņemamām cenām!</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="service-title">DZINĒJA REMONTS</h3>
+                    <p class="service-description">Dažreiz pienāk brīdis, kad dzinēja jaudas zudumu, palielināto smērvielu un degvielas patēriņu, dzinēja pielaišanas spējas pasliktināšanos un pārtraukumus visos darba režīmos nav iespējams labot ar parastajām regulēšanas darbībām...</p>
+                    <a href="#contact" class="service-link">VISI PAKALPOJUMI <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="service-title">ELEKTRODIAGNOSTIKA</h3>
+                    <p class="service-description">Kvalitatīva un ātra autodiagnostika tiek veikta ar Bosch diagnostikas iekārtām. Var veikt sekojošas lietas: pretestības mērīšana, sprieguma mērīšana, Strāvas mērīšana, veicama ar papildus ierīcēm utt. Visa veida kļūdu dzēšana, auto kompjūtera programmēšana...</p>
+                    <a href="#contact" class="service-link">VISI PAKALPOJUMI <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3 class="service-title">RITOŠĀS DAĻAS REMONTS</h3>
+                    <p class="service-description">Kopumā, jēdzienā „automobiļa ritošā daļa" ietilpst priekšējie un aizmugurējie riteņu plaukti, paši riteņi un riepas. Plauktu pamatuzdevums – vibrāciju, kas pāriet no ceļa virsmas nelīdzenuma uz virsbūvi, samazināšana un dzesēšana...</p>
+                    <a href="#contact" class="service-link">VISI PAKALPOJUMI <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-stop-circle"></i>
+                    </div>
+                    <h3 class="service-title">BREMŽU SISTĒMA</h3>
+                    <p class="service-description">Novirze no taisna virziena nospiežot bremžu pedāli, slīpēšanās skaņas, klabēšana, pedāļa sišanās, bremžu pedāļa brīvās gaitas izmaiņas un pedāļa iekrišana nospiežot to norāda, ka ar bremžu sistēmu, kaut kas nav kārtībā...</p>
+                    <a href="#contact" class="service-link">VISI PAKALPOJUMI <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="services-footer">
+                <a href="#services" class="btn-view-all">APSKATĪT VISUS MŪSU SNIEGTOS PAKALPOJUMUS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-count="20">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">GADU PIEREDZE</div>
+                </div>
+                <div class="stat-item" data-count="10000">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">APKALPOTAS AUTOMAŠĪNAS</div>
+                </div>
+                <div class="stat-item" data-count="100">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">GARANTIJA</div>
+                </div>
+                <div class="stat-item" data-count="25">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">KVALIFICĒTI UN PIEREDZĒJUŠI DARBINIEKI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">PAR MUMS</h4>
+                <h2 class="section-title">SIA "4MANN" BOSCH CAR SERVICE</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Klientiem esam pazīstami ar veikto darbu kvalitāti un individuālo pieeju – gan pret katru klientu, gan viņa automašīnu. Veiksmīgas ilggadējas sadarbības rezultātā ar lielākajiem Latvijas automašīnu un rezerves daļu izplatītājiem pie mums ir iespējams iegādāties gan oriģinālās auto rezerves daļas, gan alternatīvas auto rezerves daļas dažādās cenu kategorijās.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check"></i> Atbilstība BOSCH kvalitātes standartiem</li>
+                        <li><i class="fas fa-check"></i> BOSCH sertificēts auto serviss</li>
+                    </ul>
+                    <div class="about-locations">
+                        <p><strong>Dreiliņi</strong> - Ozolu iela 2</p>
+                        <p><strong>Ziepniekkalns</strong> - Valdeķu iela 33</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-car"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">KĀPĒC IZĒVLĒTIES MŪS</h4>
+                <h2 class="section-title">MĒS GARANTĒJAM SAVA DARBA KVALITĀTI</h2>
+                <p class="section-description">Klientiem esam pazīstami ar veikto darbu kvalitāti un individuālo pieeju – gan pret katru klientu, gan viņa automašīnu.</p>
+            </div>
+            <div class="progress-section">
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">Darbinieku kvalifikācija</span>
+                        <span class="progress-percent">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="100"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">Iekārtas un tehnika</span>
+                        <span class="progress-percent">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="100"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">Garantija</span>
+                        <span class="progress-percent">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SAZINIES AR MUMS</h2>
+                <p class="section-description">Sazinies ar mums, aizpildot kontaktformu, rakstot e-pastu vai zvanot pa tālruni.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 class="contact-title">Ziepniekkalns</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Adrese:</strong> Valdeķu iela 33, Rīga, LV-1058</p>
+                        <p><i class="fas fa-envelope"></i> <strong>E-pasts:</strong> <a href="mailto:info@4mann.com">info@4mann.com</a></p>
+                        <p><i class="fas fa-phone"></i> <strong>Tālr:</strong> <a href="tel:+37122002111">+371 22002111</a></p>
+                        <p><i class="fas fa-clock"></i> <strong>Darba laiks:</strong> darba dienās 9:00-18:00</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3 class="contact-title">Dreiliņi</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Adrese:</strong> Ozolu iela 2, Dreiliņi, Stopiņu nov. LV-2130</p>
+                        <p><i class="fas fa-envelope"></i> <strong>E-pasts:</strong> <a href="mailto:info@4mann.com">info@4mann.com</a></p>
+                        <p><i class="fas fa-phone"></i> <strong>Tālr:</strong> <a href="tel:+37129446322">+371 29446322</a></p>
+                        <p><i class="fas fa-clock"></i> <strong>Darba laiks:</strong> darba dienās 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">SIA 4 MANN REKVIZĪTI</h4>
+                    <p>Juridiskā adrese: Zeltiņu iela 9-7, Rīga LV-1035</p>
+                    <p>Reģ. Nr.: 40103781824</p>
+                    <p><strong>Bankas rekvizīti:</strong></p>
+                    <p>Banka: AS SEB Banka</p>
+                    <p>Konts Nr. LV94UNLA0050022023203</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">SERVISU ADRESES</h4>
+                    <p>Ozolu iela 2, Dreiliņi, Stopiņu nov. LV-2130</p>
+                    <p>E-pasts: info@4mann.com</p>
+                    <p>Tālr: +371 29446322</p>
+                    <p>Darba laiks: darba dienās 9:00-18:00</p>
+                    <p style="margin-top: 1rem;">Valdeķu iela 33, Rīga, LV-1058</p>
+                    <p>E-pasts: info@4mann.com</p>
+                    <p>Tālr: +371 22002111</p>
+                    <p>Darba laiks: darba dienās 9:00-18:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Seko mums</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Visas tiesības aizsargātas © 4MANN SIA.</p>
+                <p>Lapu remontēja SIA CREATING.LV</p>
+                <p><a href="#" class="footer-link">Privātuma politika</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
