@@ -103,13 +103,18 @@ const statsObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
             entry.target.classList.add('animated');
             const statItem = entry.target;
-            const count = parseInt(statItem.getAttribute('data-count'));
+            const countValue = statItem.getAttribute('data-count');
+            const count = parseInt(countValue);
             const numberElement = statItem.querySelector('.stat-number');
             
             if (numberElement) {
-                const suffix = numberElement.textContent.includes('%') ? '%' : 
-                             numberElement.textContent.includes('+') ? '+' : '';
-                animateCounter(numberElement, count, suffix);
+                if (countValue === 'X' || isNaN(count)) {
+                    numberElement.textContent = 'X';
+                } else {
+                    const suffix = numberElement.textContent.includes('%') ? '%' : 
+                                 numberElement.textContent.includes('+') ? '+' : '';
+                    animateCounter(numberElement, count, suffix);
+                }
             }
         }
     });

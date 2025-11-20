@@ -76,6 +76,11 @@ body {
     object-fit: contain;
 }
 
+.logo-wrapper a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .main-nav {
     flex: 1;
     display: flex;
@@ -824,8 +829,67 @@ body {
 
 /* Contact Section */
 .contact-section {
+    padding: 0.5rem 2rem 5rem 2rem;
+    background: var(--dark-bg);
+}
+
+/* Under Construction Section */
+.under-construction-section {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5rem 2rem;
     background: var(--dark-bg);
+}
+
+.construction-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.construction-icon {
+    font-size: 6rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.construction-title {
+    font-size: 3rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.construction-description {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.construction-actions {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .contact-grid {
@@ -902,6 +966,36 @@ body {
     color: #ccc;
     line-height: 2;
     margin-bottom: 0.5rem;
+}
+
+.footer-section p a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section p a:hover {
+    color: var(--primary-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
 }
 
 .footer-title {
@@ -1323,5 +1417,31 @@ body {
     .why-choose-section::before,
     .why-choose-section::after {
         display: none;
+    }
+
+    .under-construction-section {
+        padding: 3rem 1rem;
+        min-height: calc(100vh - 150px);
+    }
+
+    .construction-icon {
+        font-size: 4rem;
+    }
+
+    .construction-title {
+        font-size: 2rem;
+    }
+
+    .construction-description {
+        font-size: 1rem;
+    }
+
+    .construction-actions {
+        flex-direction: column;
+    }
+
+    .construction-actions .btn-hero {
+        width: 100%;
+        margin: 0;
     }
 }
