@@ -18,18 +18,28 @@
     --light-bg: #f5f5f5;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
     background: var(--dark-bg);
+    width: 100%;
+    max-width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -50,6 +60,8 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .logo-wrapper {
@@ -216,7 +228,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    min-height: calc(78vh + 120px);
+    min-height: calc(63.5vh + 100px);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -229,6 +241,9 @@ body {
     padding: 2rem;
     padding-bottom: 120px;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-background {
@@ -257,8 +272,11 @@ body {
     position: relative;
     width: 100%;
     padding: 0 2rem;
+    padding-left: 2rem;
     padding-right: 6rem;
     margin-right: 0;
+    box-sizing: border-box;
+    text-align: right;
 }
 
 .hero-badge {
@@ -293,11 +311,11 @@ body {
     opacity: 0.95;
     line-height: 2.2;
     max-width: 900px;
-    margin-left: 0;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 0;
     color: var(--text-light);
     display: block;
-    text-align: left;
+    text-align: right;
 }
 
 .btn-hero {
@@ -313,8 +331,8 @@ body {
     display: inline-block;
     transition: all 0.3s;
     text-transform: uppercase;
-    text-align: left;
-    margin-left: 0;
+    text-align: right;
+    margin-left: auto;
 }
 
 .btn-hero:hover {
@@ -330,12 +348,13 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
     overflow: hidden;
     width: 100%;
+    max-width: 100%;
     padding-left: 2rem;
     z-index: 10;
     clip-path: polygon(0 0, 57.5% 0, 50% 100%, 0% 100%);
+    box-sizing: border-box;
 }
 
 .feature-bar::after {
@@ -399,6 +418,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .section-title {
@@ -495,6 +515,15 @@ body {
 
 .stat-item {
     padding: 2rem;
+    border: 2px solid rgba(211, 47, 47, 0.3);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.stat-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.2);
 }
 
 .stat-number {
@@ -512,15 +541,16 @@ body {
 
 /* Services Section */
 .services-section {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem 5rem 2rem;
     background: var(--dark-bg);
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, minmax(340px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 
 .service-card {
