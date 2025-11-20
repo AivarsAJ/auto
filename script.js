@@ -233,8 +233,13 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Feature Slider for Mobile - Continuous Animation
+// The CSS animation handles the continuous sliding automatically
+// No JavaScript needed for the animation, it's pure CSS
+
 // Initialize on DOM Load
 document.addEventListener('DOMContentLoaded', () => {
     // Add any initialization code here
     console.log('4MANN Service website loaded');
+    initSlider();
 });
